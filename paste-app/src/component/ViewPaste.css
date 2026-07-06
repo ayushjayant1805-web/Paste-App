@@ -1,0 +1,196 @@
+/* ─── ViewPaste Page ─── */
+.view-paste-page {
+  min-height: calc(100vh - 64px);
+  padding: 48px 24px;
+  max-width: 860px;
+  margin: 0 auto;
+  animation: fadeInUp 0.5s ease both;
+}
+
+/* ─── Back Button ─── */
+.view-back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius-pill);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255,255,255,0.04);
+  border: 1px solid var(--border-subtle);
+  text-decoration: none;
+  margin-bottom: 28px;
+  transition: all 0.2s ease;
+}
+
+.view-back-btn:hover {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.07);
+  transform: translateX(-2px);
+}
+
+/* ─── View Header ─── */
+.view-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 28px;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.view-header-left {
+  flex: 1;
+  min-width: 0;
+}
+
+.view-read-only-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: var(--radius-pill);
+  background: rgba(245,158,11,0.1);
+  border: 1px solid rgba(245,158,11,0.2);
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--orange);
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.view-title {
+  font-size: clamp(22px, 4vw, 34px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  color: var(--text-primary);
+  margin-bottom: 6px;
+  word-break: break-word;
+}
+
+.view-meta {
+  font-size: 13px;
+  color: var(--text-muted);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.view-meta-dot {
+  width: 3px;
+  height: 3px;
+  border-radius: 50%;
+  background: var(--text-muted);
+}
+
+/* ─── View Actions ─── */
+.view-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+/* ─── View Code Card ─── */
+.view-code-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-xl);
+  overflow: hidden;
+  box-shadow: var(--shadow-lg);
+}
+
+.view-code-topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  background: rgba(255,255,255,0.02);
+  border-bottom: 1px solid var(--border-subtle);
+}
+
+.view-code-dots {
+  display: flex;
+  gap: 6px;
+}
+
+.view-code-dot {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.view-code-dot:nth-child(1) { background: #FF5F57; }
+.view-code-dot:nth-child(2) { background: #FEBC2E; }
+.view-code-dot:nth-child(3) { background: #28C840; }
+
+.view-code-label {
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.view-textarea {
+  width: 100% !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background: transparent !important;
+  font-family: 'JetBrains Mono', 'Courier New', monospace !important;
+  font-size: 14px !important;
+  line-height: 1.75 !important;
+  color: var(--text-primary) !important;
+  padding: 24px !important;
+  min-height: 400px;
+  resize: none;
+  box-shadow: none !important;
+  cursor: default;
+}
+
+.view-textarea:focus {
+  border-color: transparent !important;
+  box-shadow: none !important;
+}
+
+.view-code-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-top: 1px solid var(--border-subtle);
+  background: rgba(255,255,255,0.01);
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+.view-footer-stats {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+/* Reuse btn-primary from Home.css through index.css */
+.btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  font-size: 13px;
+  font-weight: 500;
+  color: var(--text-secondary);
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--border-subtle);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  color: var(--text-primary);
+  background: rgba(255,255,255,0.08);
+  border-color: rgba(255,255,255,0.15);
+  transform: translateY(-1px);
+}
